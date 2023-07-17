@@ -1,1 +1,43 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
+---
+<nav>
+	<HeaderLink  href="/">Home</HeaderLink>
+		<HeaderLink  href="#about">About</HeaderLink>
+    <HeaderLink  href="#feature">Features</HeaderLink>
+		<HeaderLink  href="#pricing">Pricing</HeaderLink>
+		<HeaderLink  href="#contact">Contact</HeaderLink>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    background-color: rgb(63, 124, 236);
+    justify-content: flex-end;
+    align-content: space-around;
+    gap:20px;
+    color: white;
+    
+  }
+  nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  nav  a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: inherit;
+    opacity: 0.72;
+    transition: opacity linear 150ms;
+  }
+  nav  a:hover {
+    opacity: 1;
+  }
+  /* @media(max-width: 600px) {
+    nav {
+      display: none;
+    }
+  } */
+</style>
