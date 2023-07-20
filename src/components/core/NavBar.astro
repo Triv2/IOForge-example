@@ -1,7 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 ---
-<nav id="navbar">
+<nav id="navbar" class="sticky">
 	<HeaderLink  href="/">Home</HeaderLink>
 		<HeaderLink  href="#about">About</HeaderLink>
     <HeaderLink  href="#feature">Features</HeaderLink>
@@ -10,7 +10,7 @@ import HeaderLink from "./HeaderLink.astro";
 </nav>
 <script src="../../config/nav.js" ></script>
 <style>
-  nav {
+  /* nav {
     display: flex;
     background-color: rgb(63, 124, 236);
     justify-content: flex-end;
@@ -34,22 +34,22 @@ import HeaderLink from "./HeaderLink.astro";
   }
   nav  a:hover {
     opacity: 1;
-  }
+  } */
 
 
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 60px;
 }
-  /* @media(max-width: 600px) {
+  @media(max-width: 600px) {
     nav {
       display: none;
     }

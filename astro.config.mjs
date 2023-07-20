@@ -5,5 +5,10 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ioforge.com',
-  integrations: [tailwind(), sitemap()]
+  integrations: [tailwind(), sitemap()],
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 });
